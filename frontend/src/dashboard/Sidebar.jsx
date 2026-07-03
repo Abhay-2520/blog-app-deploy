@@ -40,7 +40,7 @@ function Sidebar({ setComponent }) {
   return (
     <>
       <div
-        className="sm:hidden fixed top-4 left-4 z-50"
+        className="sm:hidden fixed top-4 left-4 z-50 text-black"
         onClick={() => setShow(!show)}
       >
         <CiMenuBurger className="text-2xl" />
