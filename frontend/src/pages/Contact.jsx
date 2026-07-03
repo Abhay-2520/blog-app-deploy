@@ -46,7 +46,7 @@ function Contact() {
                     type="text"
                     name="username"
                     placeholder="Your Name"
-                    className="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500"
+                    className="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500 text-black"
                     {...register("username", { required: true })}
                   />
                   {errors.username && (
@@ -60,7 +60,7 @@ function Contact() {
                     type="email"
                     name="email"
                     placeholder="Your Email"
-                    className="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500"
+                    className="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500 text-black"
                     {...register("email", { required: true })}
                   />
                   {errors.email && (
@@ -73,7 +73,7 @@ function Contact() {
                   <textarea
                     name="message"
                     placeholder="Your Message"
-                    className="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500"
+                    className="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500 text-black"
                     {...register("message", { required: true })}
                   />
                   {errors.message && (
