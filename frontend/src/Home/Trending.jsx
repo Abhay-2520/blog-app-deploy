@@ -1,4 +1,4 @@
-import React from "react";
+//import React from "react";
 import { useAuth } from "../context/AuthProvider";
 import { Link } from "react-router-dom";
 import Carousel from "react-multi-carousel";
@@ -27,7 +27,7 @@ function Trending() {
   };
   return (
     <div className=" container mx-auto">
-      <h1 className=" text-2xl font-semibold mb-4">Trending</h1>
+      <h1 className=" text-2xl font-semibold mb-4 text-white">Trending</h1>
       <Carousel responsive={responsive}>
         {blogs && blogs.length > 0 ? (
           blogs.slice(0, 6).map((element) => {
@@ -49,7 +49,7 @@ function Trending() {
                   </div>
                   <div className="p-4 bg-gray-50 rounded-b-lg h-36 flex flex-col justify-between">
                     <h1
-                      className="text-lg font-bold mb-2 overflow-hidden text-ellipsis"
+                      className="text-lg font-bold mb-2 overflow-hidden text-ellipsis text-black"
                       style={{ whiteSpace: "nowrap" }}
                     >
                       {element.title}
@@ -60,7 +60,7 @@ function Trending() {
                         alt="author_avatar"
                         className="w-10 h-10 rounded-full"
                       />
-                      <p className="ml-3 text-gray-400 text-sm">
+                      <p className="ml-3 text-black text-sm">
                         {element.adminName}
                       </p>
                     </div>
