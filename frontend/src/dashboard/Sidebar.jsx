@@ -39,6 +39,7 @@ function Sidebar({ setComponent }) {
 
   return (
     <>
+      <div className = "text-black">
       <div
         className="sm:hidden fixed top-4 left-4 z-50 text-black"
         onClick={() => setShow(!show)}
@@ -97,6 +98,7 @@ function Sidebar({ setComponent }) {
           </button>
         </ul>
       </div>
+        </div>
     </>
   );
 }
